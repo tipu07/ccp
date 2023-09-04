@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3368" data-name="Rectangle 3368" width="23" height="15" fill="rgba(0,0,0,0)" stroke="#809fb8" stroke-linejoin="round" stroke-width="1.6"/>
+    </clipPath>
+  </defs>
+  <g id="Group_25234" data-name="Group 25234" transform="translate(22382 2368)">
+    <rect id="Rectangle_3446" data-name="Rectangle 3446" width="28" height="28" transform="translate(-22382 -2368)" fill="none"/>
+    <g id="Group_25056" data-name="Group 25056" transform="translate(-22379 -2361)">
+      <g id="Group_25055" data-name="Group 25055" clip-path="url(#clip-path)">
+        <line id="Line_751" data-name="Line 751" x2="22.081" transform="translate(0.48 14.88)" fill="none" stroke="#809fb8" stroke-linejoin="round" stroke-width="1.6"/>
+        <rect id="Rectangle_3364" data-name="Rectangle 3364" width="2.88" height="4.8" transform="translate(1.44 10.08)" fill="rgba(0,0,0,0)" stroke="#809fb8" stroke-linejoin="round" stroke-width="1.6"/>
+        <rect id="Rectangle_3365" data-name="Rectangle 3365" width="2.88" height="9.6" transform="translate(7.2 5.28)" fill="rgba(0,0,0,0)" stroke="#809fb8" stroke-linejoin="round" stroke-width="1.6"/>
+        <rect id="Rectangle_3366" data-name="Rectangle 3366" width="2.88" height="7.68" transform="translate(12.96 7.2)" fill="rgba(0,0,0,0)" stroke="#809fb8" stroke-linejoin="round" stroke-width="1.6"/>
+        <rect id="Rectangle_3367" data-name="Rectangle 3367" width="2.88" height="14.4" transform="translate(18.72 0.48)" fill="rgba(0,0,0,0)" stroke="#809fb8" stroke-linejoin="round" stroke-width="1.6"/>
+      </g>
+    </g>
+  </g>
+</svg>
