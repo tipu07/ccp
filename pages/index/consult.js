@@ -14,7 +14,7 @@ export default function Consult() {
 							<h2>Free Consultation</h2>
 							<p>Discover how we can assist you. See how it works firsthand.</p>
 							<div className={`${style.btn_blk} mt-5`}>
-								<Link href="/production/register" className={`${style.site_btn} ${style.blank}`}>
+								<Link href="/register" className={`${style.site_btn} ${style.blank}`}>
 									Get Started
 								</Link>
 							</div>

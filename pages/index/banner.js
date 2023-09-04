@@ -17,7 +17,7 @@ export default function Banner() {
 							<h1>We prioritize integrity over credit repair.</h1>
 							<p>We believe in providing genuine solutions to help you achieve financial success. Your credit is a valuable asset, and we are here to ensure it works for you, not against you.</p>
 							<div className={style.btn_blk}>
-								<Link href="/production/register" className={`${style.site_btn} ${style.blank}`}>
+								<Link href="/register" className={`${style.site_btn} ${style.blank}`}>
 									Get Started
 								</Link>
 								<Link href="?" className={`${style.site_btn} ${style.simple_stroke}`}>

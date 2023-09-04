@@ -13,32 +13,32 @@ export default function Navigation(props) {
 			<nav id={style.nav}>
 				<ul id={style.nav_list} className={`${navActive ? style.active : ""}`}>
 					<li>
-						<Link href="/production/login" className={router.pathname === "/production/login" ? style.active : ""}>
+						<Link href="/login" className={router.pathname === "/login" ? style.active : ""}>
 							Affiliate Login
 						</Link>
 					</li>
 					<li>
-						<Link href="/production/pricing" className={router.pathname === "/production/pricing" ? style.active : ""}>
+						<Link href="/pricing" className={router.pathname === "/pricing" ? style.active : ""}>
 							Pricing
 						</Link>
 					</li>
 					<li>
-						<Link href="/production/refund-policy" className={router.pathname === "/production/refund-policy" ? style.active : ""}>
+						<Link href="/refund-policy" className={router.pathname === "/refund-policy" ? style.active : ""}>
 							Refund Policy
 						</Link>
 					</li>
 					<li>
-						<Link href="/production/faq" className={router.pathname === "/production/faq" ? style.active : ""}>
+						<Link href="/faq" className={router.pathname === "/faq" ? style.active : ""}>
 							FAQ&lsquo;s
 						</Link>
 					</li>
 					<li className={style.btn_links}>
-						<Link href="/production/register" className={`${style.site_btn} ${style.blank}`}>
+						<Link href="/register" className={`${style.site_btn} ${style.blank}`}>
 							Get Started
 						</Link>
 					</li>
 					<li>
-						<Link href="/production/login" className={`${style.site_btn} ${style.blank} ${style.simple_stroke}`}>
+						<Link href="/login" className={`${style.site_btn} ${style.blank} ${style.simple_stroke}`}>
 							Login
 						</Link>
 					</li>

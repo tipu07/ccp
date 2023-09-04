@@ -30,7 +30,7 @@ export default function LoginForm() {
 							</div>
 						</div>
 						<div className={style.forgot_pass}>
-							<Link href="/production/forgot">Forgot Password?</Link>
+							<Link href="/forgot">Forgot Password?</Link>
 						</div>
 						<div className={style.btn_blk}>
 							<button type="button" className={style.site_btn}>
@@ -38,10 +38,10 @@ export default function LoginForm() {
 							</button>
 						</div>
 						<div className={style.already_account}>
-							Don’t have an account yet? <Link href="/production/register">Register yourself</Link>
+							Don’t have an account yet? <Link href="/register">Register yourself</Link>
 						</div>
 						<div className={style.affiliate_login}>
-							<Link href="/production/login">Affiliate Login</Link>
+							<Link href="/login">Affiliate Login</Link>
 						</div>
 					</div>
 				</form>

@@ -62,10 +62,10 @@ export default function RegisterForm() {
 							</button>
 						</div>
 						<div className={style.already_account}>
-							Already have an account? <Link href="/production/login">Login</Link>
+							Already have an account? <Link href="/login">Login</Link>
 						</div>
 						<div className={style.affiliate_login}>
-							<Link href="/production/login">Become Affiliate</Link>
+							<Link href="/login">Become Affiliate</Link>
 						</div>
 					</div>
 				</form>
