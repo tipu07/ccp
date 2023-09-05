@@ -2,7 +2,7 @@ import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Logo from "./logo"
 import Image from "next/image"
-import { IconAffiliate, IconApplication2, IconCog, IconCommission, IconCrowned, IconCustomer, IconDashboard, IconDispute, IconEnvelope, IconInstallment, IconInvoice, IconTeam, IconWithdraw, PhotoUser_01 } from "./images"
+import { IconAffiliate, IconApplication2, IconCog, IconCommission, IconCrowned, IconCustomer, IconDashboard, IconDispute, IconEnvelope, IconInstallment, IconInvoice, IconTeam, IconWithdraw, PhotoUser_05 } from "./images"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -15,11 +15,11 @@ export default function UserSidebar(props) {
 				<Logo />
 				<div className={style.profile_block}>
 					<div className={`${style.ico} ${style.fill}`}>
-						<Image width={200} height={200} src={PhotoUser_01} alt="" />
+						<Image width={200} height={200} src={PhotoUser_05} alt="" />
 					</div>
 					<div className={style.txt}>
-						<div className={style.name}>Jennifer</div>
-						<span className={style.type}>Customers</span>
+						<div className={style.name}>Monica Kajvral</div>
+						<span className={style.type}>Users</span>
 					</div>
 				</div>
 				<div className={style.sidebar_inner}>

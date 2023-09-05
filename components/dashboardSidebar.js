@@ -2,7 +2,7 @@ import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Logo from "./logo"
 import Image from "next/image"
-import { IconAgreement, IconApplication2, IconBook, IconDashboard, IconEnvelope, IconInvoice, IconNotice, IconRefund, PhotoUser_01 } from "./images"
+import { IconAgreement, IconApplication2, IconBook, IconDashboard, IconEnvelope, IconInvoice, IconNotice, IconRefund, PhotoUser_03 } from "./images"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -15,11 +15,11 @@ export default function DashboardSidebar(props) {
 				<Logo />
 				<div className={style.profile_block}>
 					<div className={`${style.ico} ${style.fill}`}>
-						<Image width={200} height={200} src={PhotoUser_01} alt="" />
+						<Image width={200} height={200} src={PhotoUser_03} alt="" />
 					</div>
 					<div className={style.txt}>
-						<div className={style.name}>Jennifer</div>
-						<span className={style.type}>Customers</span>
+						<div className={style.name}>Samira Jones</div>
+						<span className={style.type}>Dashboard</span>
 					</div>
 				</div>
 				<div className={style.sidebar_inner}>
