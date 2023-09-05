@@ -18,8 +18,8 @@ export default function AffiliateRegistrationSidebar(props) {
 						<Image width={200} height={200} src={PhotoUser_01} alt="" />
 					</div>
 					<div className={style.txt}>
-						<div className={style.name}>Jennifer</div>
-						<span className={style.type}>Customers</span>
+						<div className={style.name}>Jennifer Kem</div>
+						<span className={style.type}>Affiliate</span>
 					</div>
 				</div>
 				<div className={style.sidebar_inner}>
