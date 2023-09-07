@@ -3102,6 +3102,29 @@
 	}
 }
 
+.dash_blk {
+	@include flex(center, center);
+	@include gap(2rem);
+	padding: 2rem 3rem;
+	background: var(--light);
+	text-align: center;
+	border: 0.1rem solid #d9e1e7;
+	border-radius: 1rem;
+	.title {
+		color: var(--black);
+		font-size: 2.4rem;
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 0.5rem;
+	}
+	span {
+		display: block;
+		color: #809fb8;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}
+
 .table_pagination {
 	@include flex(center);
 	@include mobile {
@@ -3292,6 +3315,7 @@
 		}
 	}
 }
+
 #user_dashboard {
 	.customer_info {
 		margin-top: 4rem;
@@ -3779,5 +3803,28 @@
 		background: #eaeef6;
 		color: var(--prime_color);
 		border-color: var(--prime_color);
+	}
+}
+
+.tab_buttons {
+	@include i_flex(center, center);
+	@include gap(0 3rem);
+	background: #d9e1e7;
+	font-size: 1.4rem;
+	font-weight: 500;
+	padding: 0.4rem 2rem;
+	border-radius: 0.8rem;
+	> button {
+		color: #809fb8;
+		&:hover {
+			color: var(--prime_color);
+		}
+		&.active {
+			background: var(--black);
+			color: var(--light);
+			padding: 0.6rem 2rem;
+			margin: 0 -1.6rem;
+			border-radius: inherit;
+		}
 	}
 }
