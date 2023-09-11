@@ -261,16 +261,16 @@
 		top: 100%;
 		@include list;
 		min-width: 26rem;
-		background: var(--black);
+		background: var(--light);
 		font-size: inherit;
 		margin: 0;
 		// padding: 0.7rem 0;
 		margin-top: 0.5rem;
-		border: 0.1rem solid rgba(var(--light_rgb), 0.2);
+		border: 0.1rem solid rgba(var(--black_rgb), 0.1);
 		border-radius: 0.8rem;
-		pointer-events: none;
+		/* pointer-events: none;
 		visibility: hidden;
-		opacity: 0;
+		opacity: 0; */
 		z-index: 5;
 		&.active {
 			pointer-events: auto;
@@ -280,7 +280,7 @@
 		> li {
 			display: block;
 			&:not(:nth-last-child(1)) {
-				border-bottom: 0.1rem solid rgba(var(--light_rgb), 0.2);
+				border-bottom: 0.1rem solid rgba(var(--black_rgb), 0.1);
 			}
 			> * {
 				@include flex(center);

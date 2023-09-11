@@ -125,6 +125,7 @@ export { default as ClientGroupIcon } from "/public/images/client_group_icon.svg
 export { default as ClientTenIcon } from "/public/images/client_ten_icon.svg"
 export { default as RewardIcon } from "/public/images/reward-icon.svg"
 export { default as CopyIcon } from "/public/images/copy-icon.svg"
+export { default as MoreIcon } from "/public/images/more_icon.svg"
 
 export { default as BlockDesktopIcon } from "/public/images/block_desktop_icon.svg"
 export { default as BlockTotalCustomerIcon } from "/public/images/block_total_customer_icon.svg"
@@ -136,6 +137,7 @@ export { default as BlockThumbsUpIcon } from "/public/images/block-thumbs-up.svg
 export { default as BlockDollarIcon } from "/public/images/block-dollar.svg"
 export { default as BlockUserIcon } from "/public/images/block-user.svg"
 export { default as BlockCallIcon } from "/public/images/block-call.svg"
+export { default as BlockIssueIcon } from "/public/images/block-issue.svg"
 export { default as BlockChartIcon } from "/public/images/block-chart.svg"
 export { default as BlockChartRedIcon } from "/public/images/block-chart-red.svg"
 export { default as BlockChartGreenIcon } from "/public/images/block-chart-green.svg"
