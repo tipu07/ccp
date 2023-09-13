@@ -49,7 +49,7 @@ export default function AdminSidebar(props) {
 							</Link>
 						</li>
 						<li>
-							<Link href="/admin/reports" className={router.pathname === "/admin/reports" ? style.active : ""}>
+							<Link href="/admin/refund" className={router.pathname === "/admin/refund" ? style.active : ""}>
 								<Image width={100} height={100} src={IconClient} alt="" />
 								Refund
 							</Link>
