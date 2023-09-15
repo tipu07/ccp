@@ -4,7 +4,7 @@ import CustomerServiceHeader from "@/components/customerServiceHeader"
 import CustomerServiceSidebar from "@/components/customerServiceSidebar"
 import UpdatesDetail from "./updates/updatesDetail"
 
-export default function Application() {
+export default function Updates() {
 	const [toggle, setToggle] = useState(false)
 	const toggleHandle = () => {
 		setToggle(!toggle)

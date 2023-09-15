@@ -1056,6 +1056,16 @@
 		@include mobile {
 			font-size: 1.8rem;
 		}
+		&_wrapper {
+			@include flex(center);
+			margin-bottom: 3.6rem;
+			.heading {
+				-webkit-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				margin: 0;
+			}
+		}
 		&::after {
 			content: "";
 			-webkit-box-flex: 1;
@@ -3797,6 +3807,7 @@
 		color: var(--prime_color);
 	}
 	> img {
+		-webkit-filter: grayscale(1) brightness(0.6) invert(1);
 		filter: grayscale(1) brightness(0.6) invert(1);
 	}
 	&.active {
