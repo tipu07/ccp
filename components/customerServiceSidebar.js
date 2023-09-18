@@ -2,7 +2,7 @@ import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Logo from "./logo"
 import Image from "next/image"
-import { IconDashboard, IconNotice, IconNotices2, IconPhoneCircle, IconRequest, IconUpdate, PhotoUser_06 } from "./images"
+import { IconDashboard, IconNotice, IconNotices2, IconPhoneCircle, IconRequest, IconUpdate, PhotoUser_07 } from "./images"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -15,11 +15,11 @@ export default function CustomerServiceSidebar(props) {
 				<Logo />
 				<div className={style.profile_block}>
 					<div className={`${style.ico} ${style.fill}`}>
-						<Image width={200} height={200} src={PhotoUser_06} alt="" />
+						<Image width={200} height={200} src={PhotoUser_07} alt="" />
 					</div>
 					<div className={style.txt}>
-						<div className={style.name}>John Wick</div>
-						<span className={style.type}>Sales Manager</span>
+						<div className={style.name}>Diana Lady</div>
+						<span className={style.type}>Customer Service</span>
 					</div>
 				</div>
 				<div className={style.sidebar_inner}>
