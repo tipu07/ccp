@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import style from "@/styles/scss/web.module.scss"
-import UserHeader from "@/components/userHeader"
-import UserSidebar from "@/components/userSidebar"
+import AdminDashboardHeader from "@/components/adminDashboardHeader"
+import AdminDashboardSidebar from "@/components/adminDashboardSidebar"
 import InstallmentsDetail from "./installments/installmentsDetail"
 
 export default function Installments() {
@@ -12,9 +12,9 @@ export default function Installments() {
 	return (
 		<>
 			<section className={`${style.dashboard} ${toggle ? style.flow : ""}`} id={style.application}>
-				<UserSidebar isActive={toggle} />
+				<AdminDashboardSidebar isActive={toggle} />
 				<div id={style.main_area}>
-					<UserHeader isActive={toggle} onToggle={toggleHandle} pageTitle="Installments" />
+					<AdminDashboardHeader isActive={toggle} onToggle={toggleHandle} pageTitle="Installments" />
 					<InstallmentsDetail />
 				</div>
 			</section>

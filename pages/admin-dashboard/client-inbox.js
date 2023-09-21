@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import style from "@/styles/scss/web.module.scss"
-import UserHeader from "@/components/userHeader"
-import UserSidebar from "@/components/userSidebar"
+import AdminDashboardHeader from "@/components/adminDashboardHeader"
+import AdminDashboardSidebar from "@/components/adminDashboardSidebar"
 import MessagesDetail from "./messages/messagesDetail"
 
 export default function ClientInbox() {
@@ -12,9 +12,9 @@ export default function ClientInbox() {
 	return (
 		<>
 			<section className={`${style.dashboard} ${toggle ? style.flow : ""}`} id={style.message}>
-				<UserSidebar isActive={toggle} />
+				<AdminDashboardSidebar isActive={toggle} />
 				<div id={style.main_area}>
-					<UserHeader isActive={toggle} onToggle={toggleHandle} pageTitle="Client Inbox" />
+					<AdminDashboardHeader isActive={toggle} onToggle={toggleHandle} pageTitle="Client Inbox" />
 					<MessagesDetail />
 				</div>
 			</section>
