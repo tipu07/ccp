@@ -13,7 +13,7 @@ export default function ApplicationDetail() {
 			<div className={style.top_head}>
 				<h4 className="m-0">Summary</h4>
 				<div className={`${style.btn_blk} ms-auto`}>
-					<Link href="?" className={`${style.site_btn}`}>
+					<Link href="/diana-process/create-application" className={`${style.site_btn}`}>
 						<Image width={100} height={100} src={IconPlus} alt="" /> Create New Summary
 					</Link>
 				</div>

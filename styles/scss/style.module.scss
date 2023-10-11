@@ -1640,6 +1640,11 @@
 				white-space: nowrap;
 			}
 		}
+		select.input {
+			width: 12rem;
+			min-width: 12rem;
+			height: 4rem;
+		}
 	}
 	.svc_agreement,
 	.ccp_notice {

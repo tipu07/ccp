@@ -43,7 +43,7 @@ export default function NewApplicationTable() {
 									<RatingStars value={4} />
 								</td>
 								<td className="text-center">
-									<span className={`${style.status} ${style.green}`}>Completed</span>
+									<span className={`${style.status} ${style.orange}`}>Pending</span>
 								</td>
 								<td>Credit CardCard</td>
 								<td>$1000</td>
