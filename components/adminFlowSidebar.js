@@ -2,7 +2,7 @@ import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Logo from "./logo"
 import Image from "next/image"
-import { IconClient, IconDashboard, IconIssue, IconNotices2, IconRequest, PhotoUser_09 } from "./images"
+import { IconClient, IconDashboard, IconIssue, IconNotices2, IconRequest, PhotoUser_10 } from "./images"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -15,7 +15,7 @@ export default function AdminFlowSidebar(props) {
 				<Logo />
 				<div className={style.profile_block}>
 					<div className={`${style.ico} ${style.fill}`}>
-						<Image width={200} height={200} src={PhotoUser_09} alt="" />
+						<Image width={200} height={200} src={PhotoUser_10} alt="" />
 					</div>
 					<div className={style.txt}>
 						<div className={style.name}>Brent Phillips</div>
