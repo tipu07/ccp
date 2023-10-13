@@ -1533,68 +1533,6 @@
 }
 
 #application {
-	.tabs_block {
-		@include flex(center, space-between);
-		background: #f5f5f5;
-		padding: 0 4rem;
-		margin-bottom: 2rem;
-		border-radius: 0.4rem;
-		overflow: hidden;
-		@include mobile {
-			padding: 0 2rem;
-		}
-		.tabs_list {
-			@include list;
-			@include flex;
-			@include ipad {
-				margin-right: 4rem;
-				overflow: hidden;
-				overflow-x: auto;
-			}
-			> li {
-				margin-right: 7rem;
-				@include ipad {
-					margin-right: 4rem;
-				}
-				> button {
-					color: #809fb8;
-					font-size: 1.6rem;
-					padding: 1.4rem 0 1.6rem;
-					border-bottom: 0.3rem solid transparent;
-					white-space: nowrap;
-					&:hover {
-						color: var(--black);
-					}
-					&.active {
-						color: var(--prime_color);
-						font-weight: 600;
-						border-color: var(--prime_color);
-					}
-				}
-			}
-		}
-		.save_btn {
-			@include i_flex(center);
-			color: var(--prime_color);
-			font-size: 1.6rem;
-			font-weight: 600;
-			white-space: nowrap;
-			@include mobile {
-				> span {
-					display: none;
-				}
-			}
-			&:hover {
-				color: var(--black);
-			}
-			> img {
-				width: 1.8rem;
-				min-width: 1.8rem;
-				height: 1.8rem;
-				margin-right: 1rem;
-			}
-		}
-	}
 	.application_form {
 		max-width: 111rem;
 	}
@@ -1702,6 +1640,108 @@
 		h5 {
 			color: #3c9505;
 			margin-bottom: 3rem;
+		}
+	}
+}
+
+.tabs_block {
+	@include flex(center, space-between);
+	background: #f5f5f5;
+	padding: 0 4rem;
+	margin-bottom: 2rem;
+	border-radius: 0.4rem;
+	overflow: hidden;
+	@include mobile {
+		padding: 0 2rem;
+	}
+	.tabs_list {
+		@include list;
+		@include flex;
+		@include ipad {
+			margin-right: 4rem;
+			overflow: hidden;
+			overflow-x: auto;
+		}
+		> li {
+			margin-right: 7rem;
+			@include ipad {
+				margin-right: 4rem;
+			}
+			> button {
+				color: #809fb8;
+				font-size: 1.6rem;
+				padding: 1.4rem 0 1.6rem;
+				border-bottom: 0.3rem solid transparent;
+				white-space: nowrap;
+				&:hover {
+					color: var(--black);
+				}
+				&.active {
+					color: var(--prime_color);
+					font-weight: 600;
+					border-color: var(--prime_color);
+				}
+			}
+		}
+	}
+	.save_btn {
+		@include i_flex(center);
+		color: var(--prime_color);
+		font-size: 1.6rem;
+		font-weight: 600;
+		white-space: nowrap;
+		@include mobile {
+			> span {
+				display: none;
+			}
+		}
+		&:hover {
+			color: var(--black);
+		}
+		> img {
+			width: 1.8rem;
+			min-width: 1.8rem;
+			height: 1.8rem;
+			margin-right: 1rem;
+		}
+	}
+	&_02 {
+		background: #f5f5f5;
+		padding: 0 4rem;
+		margin-bottom: 3rem;
+		border-radius: 0.4rem;
+		ul {
+			@include list;
+			@include flex;
+			@include gap(1rem 10rem);
+			@include mobile {
+				@include flex($justify: center);
+				@include gap(1rem 5rem);
+			}
+			> li {
+				> button {
+					position: relative;
+					color: #959595;
+					font-size: 1.6rem;
+					font-weight: 600;
+					padding: 1.3rem 0 1.6rem;
+					&:hover,
+					&.active {
+						color: var(--prime_color);
+					}
+					&.active {
+						&::before {
+							content: "";
+							@include pos($t: null);
+							width: 80%;
+							height: 0.3rem;
+							background: var(--prime_color);
+							margin: auto;
+							border-radius: 10rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -1858,45 +1898,6 @@
 }
 
 #application_view {
-	.tabs_block {
-		background: #f5f5f5;
-		padding: 0 4rem;
-		margin-bottom: 3rem;
-		border-radius: 0.4rem;
-		ul {
-			@include list;
-			@include flex;
-			@include gap(1rem 10rem);
-			@include mobile {
-				@include flex($justify: center);
-				@include gap(1rem 5rem);
-			}
-			> li {
-				> button {
-					position: relative;
-					color: #959595;
-					font-size: 1.6rem;
-					font-weight: 600;
-					padding: 1.3rem 0 1.6rem;
-					&:hover,
-					&.active {
-						color: var(--prime_color);
-					}
-					&.active {
-						&::before {
-							content: "";
-							@include pos($t: null);
-							width: 80%;
-							height: 0.3rem;
-							background: var(--prime_color);
-							margin: auto;
-							border-radius: 10rem;
-						}
-					}
-				}
-			}
-		}
-	}
 	.in_blk {
 		padding: 3rem;
 		&:not(:nth-last-child(1)) {
@@ -3182,7 +3183,8 @@
 				font-weight: 500;
 				cursor: pointer;
 				&.active {
-					background: #b0a5c4;
+					// background: #b0a5c4;
+					background: var(--prime_color);
 					color: var(--light);
 					border-radius: 10rem;
 				}

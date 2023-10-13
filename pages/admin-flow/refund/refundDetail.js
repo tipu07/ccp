@@ -3,12 +3,9 @@ import style from "@/styles/scss/web.module.scss"
 import TablePagination from "@/components/tablePagination"
 import Image from "next/image"
 import { IconDownload2, IconFilter, IconSearch } from "@/components/images"
-import AllApplicationTable from "./allApplicationTable"
-import InReviewTable from "./inReviewTable"
-import DraftsTable from "./draftsTable"
-import NewApplicationTable from "./newApplicationTable"
+import RefundTable from "./refundTable"
 
-export default function ApplicationDetail() {
+export default function RefundDetail() {
 	const [tab, setTab] = useState("AllApplication")
 	return (
 		<>
@@ -17,21 +14,6 @@ export default function ApplicationDetail() {
 					<li>
 						<button type="button" className={tab === "AllApplication" ? style.active : ""} onClick={() => setTab("AllApplication")}>
 							All Application
-						</button>
-					</li>
-					<li>
-						<button type="button" className={tab === "NewApplication" ? style.active : ""} onClick={() => setTab("NewApplication")}>
-							New Application
-						</button>
-					</li>
-					<li>
-						<button type="button" className={tab === "InReview" ? style.active : ""} onClick={() => setTab("InReview")}>
-							In Review
-						</button>
-					</li>
-					<li>
-						<button type="button" className={tab === "Drafts" ? style.active : ""} onClick={() => setTab("Drafts")}>
-							Drafts
 						</button>
 					</li>
 				</ul>
@@ -55,19 +37,7 @@ export default function ApplicationDetail() {
 				</div>
 				{tab === "AllApplication" ? (
 					<>
-						<AllApplicationTable />
-					</>
-				) : tab === "InReview" ? (
-					<>
-						<InReviewTable />
-					</>
-				) : tab === "NewApplication" ? (
-					<>
-						<NewApplicationTable />
-					</>
-				) : tab === "Drafts" ? (
-					<>
-						<DraftsTable />
+						<RefundTable />
 					</>
 				) : null}
 			</div>

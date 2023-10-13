@@ -7,7 +7,7 @@ export default function ApplicationViewDetail() {
 	const [tabContent, setTabContent] = useState("ApplicationStatus")
 	return (
 		<>
-			<div className={style.tabs_block}>
+			<div className={style.tabs_block_02}>
 				<ul>
 					<li>
 						<button type="button" className={tabContent === "ApplicationStatus" ? style.active : ""} onClick={() => setTabContent("ApplicationStatus")}>
