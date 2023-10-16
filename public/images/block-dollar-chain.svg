@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 77 77">
+  <g id="Group_25234" data-name="Group 25234" transform="translate(-409 -393.582)">
+    <g id="Group_25180" data-name="Group 25180" transform="translate(-21 182.332)">
+      <rect id="icon_bg" data-name="icon bg" width="77" height="77" rx="16" transform="translate(430 211.25)" fill="#dbd7fb"/>
+    </g>
+    <g id="Group_25188" data-name="Group 25188" transform="translate(-525.684 -117.102)">
+      <circle id="Ellipse_3485" data-name="Ellipse 3485" cx="10.881" cy="10.881" r="10.881" transform="translate(968.106 532.5)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_3486" data-name="Ellipse 3486" cx="5.204" cy="5.204" r="5.204" transform="translate(973.783 538.175)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_797" data-name="Line 797" x1="2.212" y2="5.201" transform="translate(981.445 533.594)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_798" data-name="Line 798" x2="2.26" y2="5.273" transform="translate(974.137 533.594)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_799" data-name="Line 799" x1="5.202" y1="2.178" transform="translate(983.531 545.914)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_800" data-name="Line 800" x1="5.23" y2="2.224" transform="translate(983.504 538.572)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_801" data-name="Line 801" y1="5.234" x2="2.227" transform="translate(974.236 547.934)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_802" data-name="Line 802" x1="2.231" y1="5.242" transform="translate(981.526 547.926)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_803" data-name="Line 803" x2="5.26" y2="2.214" transform="translate(969.16 538.671)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_804" data-name="Line 804" y1="2.244" x2="5.3" transform="translate(969.16 545.948)" fill="none" stroke="#513ef0" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_805" data-name="Line 805" y2="1.57" transform="translate(966.777 560.308)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_806" data-name="Line 806" y2="1.573" transform="translate(966.777 549.305)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_19835" data-name="Path 19835" d="M5.959,20.239a2.357,2.357,0,1,0,2.357-2.357,2.357,2.357,0,1,1,2.357-2.357" transform="translate(958.461 537.71)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_19836" data-name="Path 19836" d="M11.5,9.369c-.239-.017-.477-.036-.721-.036A10.276,10.276,0,1,0,21.053,19.61c0-.242-.02-.482-.036-.721" transform="translate(956 535.981)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_19837" data-name="Path 19837" d="M.981,5.041l2.91,2.891,2.893-2.91" transform="translate(956.217 534.038)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_19838" data-name="Path 19838" d="M10.216,1.013A7.253,7.253,0,0,0,2.985,8.29l0,1.451" transform="translate(957.12 532.231)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_19839" data-name="Path 19839" d="M24.822,19.863l-2.91-2.891-2.893,2.91" transform="translate(964.347 539.425)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_19840" data-name="Path 19840" d="M16.031,25.7a7.252,7.252,0,0,0,7.231-7.277l0-1.451" transform="translate(963.001 539.424)" fill="none" stroke="#513ef0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
