@@ -3846,3 +3846,50 @@
 		}
 	}
 }
+
+.view_documents {
+	.letter {
+		background: #f5f5f5;
+		padding: 2rem;
+		border-radius: 1rem;
+		img {
+			max-width: 60rem;
+			margin: auto;
+			border: 0.1rem solid rgba(var(--black_rgb), 0.2);
+		}
+	}
+}
+
+.todo_list {
+	background: var(--light);
+	border: 0.1rem solid #d9e1e7;
+	border-radius: 1rem;
+	overflow: hidden;
+	&_title {
+		background: #f1f0ff;
+		padding: 1.8rem 2rem;
+		line-height: 1.2;
+		font-weight: 600;
+		cursor: pointer;
+		&.active {
+			color: var(--prime_color);
+		}
+	}
+	&_data {
+		font-size: 1.6rem;
+		padding: 1.8rem 2rem;
+		ul {
+			@include list;
+			> li {
+				&:not(:nth-last-child(1)) {
+					margin-bottom: 0.7rem;
+				}
+				> button {
+					&.active {
+						color: var(--prime_color);
+					}
+				}
+			}
+		}
+	}
+}
