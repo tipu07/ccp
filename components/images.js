@@ -17,6 +17,7 @@ export { default as JourneyPhoto } from "/public/images/journey_image.png"
 export { default as ConsultPhoto } from "/public/images/consult_image.jpg"
 export { default as BannerPhoto } from "/public/images/banner_image.jpg"
 export { default as AdvertPhoto } from "/public/images/advert_home.png"
+export { default as LetterPhoto } from "/public/images/letter.jpg"
 
 export { default as PhotoUser_01 } from "/public/images/users/01.jpg"
 export { default as PhotoUser_02 } from "/public/images/users/02.jpg"
