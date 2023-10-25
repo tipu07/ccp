@@ -3794,6 +3794,7 @@
 	}
 }
 
+#assign_popup,
 #add_new_popup,
 #pay_later_popup,
 #target_call_popup {
@@ -3888,6 +3889,36 @@
 					&.active {
 						color: var(--prime_color);
 					}
+				}
+			}
+		}
+	}
+}
+
+.assign_blk {
+	@include flex(center);
+	.ico {
+		width: 8rem;
+		min-width: 8rem;
+		height: 8rem;
+		margin-right: 2rem;
+	}
+	.txt {
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		ul {
+			@include list;
+			@include flex(center);
+			> li {
+				-webkit-box-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				strong {
+					display: block;
+					font-size: 1.6rem;
+					font-weight: 500;
+					color: var(--dark_gray);
 				}
 			}
 		}

@@ -1,8 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import style from "@/styles/scss/web.module.scss"
 import RatingStars from "@/components/ratingStars"
+import PopupAssign from "@/components/popupAssign"
 
 export default function NewApplicationTable() {
+	const [assignPopup, setAssignPopup] = useState(false)
+	const assignPopupHandle = () => {
+		setAssignPopup(!assignPopup)
+	}
 	return (
 		<>
 			<div className={style.table_blk_wrapper}>
@@ -49,7 +54,7 @@ export default function NewApplicationTable() {
 								<td>$1000</td>
 								<td>
 									<div className={style.btn_blk}>
-										<button type="button" className={`${style.site_btn} ${style.sm}`}>
+										<button type="button" className={`${style.site_btn} ${style.sm}`} onClick={assignPopupHandle}>
 											Assign to
 										</button>
 									</div>
@@ -78,7 +83,7 @@ export default function NewApplicationTable() {
 								<td>$1000</td>
 								<td>
 									<div className={style.btn_blk}>
-										<button type="button" className={`${style.site_btn} ${style.sm}`}>
+										<button type="button" className={`${style.site_btn} ${style.sm}`} onClick={assignPopupHandle}>
 											Assign to
 										</button>
 									</div>
@@ -88,6 +93,7 @@ export default function NewApplicationTable() {
 					</table>
 				</div>
 			</div>
+			{assignPopup ? <PopupAssign closePopupHandle={assignPopupHandle} /> : null}
 		</>
 	)
 }
