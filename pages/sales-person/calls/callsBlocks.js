@@ -6,8 +6,8 @@ import { BlockCallIcon, BlockDraftsIcon, BlockThumbsUpIcon, BlockUserIcon } from
 export default function CallsBlocks() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-md-3">
+			<div className="row mb-0">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockCallIcon} alt="" />
@@ -18,7 +18,7 @@ export default function CallsBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockUserIcon} alt="" />
@@ -29,7 +29,7 @@ export default function CallsBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockThumbsUpIcon} alt="" />
@@ -40,7 +40,7 @@ export default function CallsBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockDraftsIcon} alt="" />

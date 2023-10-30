@@ -1,13 +1,13 @@
 import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Image from "next/image"
-import { BlockApplicationIcon, BlockChartGreenIcon, BlockChartRedIcon, BlockDraftsIcon, BlockIssueIcon, BlockUpwardGreenIcon, BlockUpwardRedIcon, BlockUserIcon } from "@/components/images"
+import { BlockApplicationIcon, BlockDraftsIcon, BlockIssueIcon, BlockUserIcon } from "@/components/images"
 
 export default function DashboardBlocks() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-md-3">
+			<div className="row mb-0">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockApplicationIcon} alt="" />
@@ -18,7 +18,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockUserIcon} alt="" />
@@ -29,7 +29,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockIssueIcon} alt="" />
@@ -40,7 +40,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockDraftsIcon} alt="" />
@@ -51,7 +51,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockDraftsIcon} alt="" />

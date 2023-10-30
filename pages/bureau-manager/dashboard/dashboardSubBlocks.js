@@ -4,8 +4,8 @@ import style from "@/styles/scss/web.module.scss"
 export default function DashboardSubBlocks() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-md-3">
+			<div className="row mb-0">
+				<div className="col-md-3 pb-0">
 					<div className={style.dash_blk}>
 						<div className={style.txt}>
 							<div className={style.title}>3,852</div>
@@ -13,7 +13,7 @@ export default function DashboardSubBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.dash_blk}>
 						<div className={style.txt}>
 							<div className={style.title}>2000</div>
@@ -21,7 +21,7 @@ export default function DashboardSubBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.dash_blk}>
 						<div className={style.txt}>
 							<div className={style.title}>860</div>
@@ -29,7 +29,7 @@ export default function DashboardSubBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.dash_blk}>
 						<div className={style.txt}>
 							<div className={style.title}>2992</div>

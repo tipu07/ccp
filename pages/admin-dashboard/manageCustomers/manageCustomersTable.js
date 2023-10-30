@@ -1,7 +1,7 @@
 import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Image from "next/image"
-import { IconEdit2, IconEye, IconTrash, PhotoUser_01 } from "@/components/images"
+import { PhotoUser_01 } from "@/components/images"
 
 export default function ManageCustomersTable() {
 	return (

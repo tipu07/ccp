@@ -1053,6 +1053,9 @@
 		font-size: 2.2rem;
 		font-weight: 700;
 		margin-bottom: 3.6rem;
+		@include mobile {
+			font-size: 1.8rem;
+		}
 		&_wrapper {
 			@include flex(center);
 			margin-bottom: 3.6rem;
@@ -1076,12 +1079,26 @@
 	.top_head {
 		@include flex(center, flex-end);
 		margin-bottom: 2rem;
+		@include mobile_md {
+			@include flex($flow: wrap);
+			@include gap(2rem);
+			> * {
+				-webkit-box-flex: 1;
+				-ms-flex: 1 1 30rem;
+				flex: 1 1 30rem;
+			}
+		}
 		.payment_tab {
 			@include list;
 			@include flex;
 			@include gap(1rem 4rem);
 			margin-top: auto;
 			margin-right: auto;
+			@include mobile_md {
+				-webkit-box-ordinal-group: 2;
+				-ms-flex-order: 1;
+				order: 1;
+			}
 			> li {
 				> button {
 					position: relative;
@@ -1112,6 +1129,10 @@
 			position: relative;
 			min-width: 30rem;
 			margin-right: 3rem;
+			@include mobile_md {
+				min-width: 0;
+				margin: 0;
+			}
 			button {
 				@include pos($r: null);
 				width: 1.4rem;
@@ -1131,6 +1152,11 @@
 		}
 		.btn_blk {
 			@include mobile_md {
+				> * {
+					-webkit-box-flex: 1;
+					-ms-flex: 1 1 15rem;
+					flex: 1 1 15rem;
+				}
 			}
 		}
 	}
@@ -1143,6 +1169,11 @@
 			@include list;
 			@include flex;
 			@include gap(0 5rem);
+			@include mobile {
+				@include gap(0 3rem);
+				overflow: hidden;
+				overflow-x: auto;
+			}
 			> li {
 				> button {
 					position: relative;
@@ -1192,11 +1223,17 @@
 			@include ipad_sm {
 				margin-right: auto;
 			}
+			@include mobile {
+				line-height: 1;
+			}
 			> span {
 				display: block;
 				color: #809fb8;
 				font-size: 1.8rem;
 				font-weight: 500;
+				@include mobile {
+					display: none;
+				}
 			}
 		}
 		.query_form {
@@ -1361,6 +1398,9 @@
 		.icon {
 			height: 6rem;
 			margin-bottom: 1.6rem;
+			@include mobile {
+				height: 5rem;
+			}
 			> img {
 				@include object(contain, left center);
 			}
@@ -1557,6 +1597,9 @@
 		table {
 			width: 100%;
 			margin-bottom: -0.1rem;
+			@include mobile {
+				min-width: 80rem;
+			}
 			tr {
 				th,
 				td {
@@ -1608,6 +1651,9 @@
 	margin-bottom: 2rem;
 	border-radius: 0.4rem;
 	overflow: hidden;
+	@include mobile {
+		padding: 0 2rem;
+	}
 	.tabs_list {
 		@include list;
 		@include flex;
@@ -1645,6 +1691,9 @@
 		font-weight: 600;
 		white-space: nowrap;
 		@include mobile {
+			> span {
+				display: none;
+			}
 		}
 		&:hover {
 			color: var(--black);
@@ -1665,6 +1714,10 @@
 			@include list;
 			@include flex;
 			@include gap(1rem 10rem);
+			@include mobile {
+				@include flex($justify: center);
+				@include gap(1rem 5rem);
+			}
 			> li {
 				> button {
 					position: relative;
@@ -1889,6 +1942,9 @@
 	.application_blk {
 		position: relative;
 		padding: 4rem 5rem;
+		@include mobile {
+			padding: 2rem;
+		}
 		&::before,
 		&::after {
 			content: "";
@@ -1896,6 +1952,9 @@
 			left: 6.8rem;
 			width: 0.4rem;
 			background: var(--prime_color);
+			@include mobile {
+				left: 3.8rem;
+			}
 		}
 		&::before {
 			top: -2rem;
@@ -1941,6 +2000,10 @@
 					font-size: 1.6rem;
 					font-weight: 500;
 					margin-left: 3rem;
+					@include mobile {
+						display: block;
+						margin: 0;
+					}
 				}
 			}
 			> .dot {
@@ -1971,6 +2034,15 @@
 				@include list;
 				> li {
 					@include flex(center);
+					@include mobile {
+						@include gap(1rem);
+						@include flex($flow: wrap);
+						> * {
+							&:nth-child(1) {
+								margin-left: 1.4rem;
+							}
+						}
+					}
 					&:not(:nth-last-child(1)) {
 						margin-bottom: 1.5rem;
 					}
@@ -1985,6 +2057,9 @@
 						margin-left: -0.8rem;
 						margin-right: 3rem;
 						border-radius: 75%;
+						@include mobile {
+							margin-right: 0;
+						}
 					}
 					> small {
 						min-width: 10rem;
@@ -1992,12 +2067,26 @@
 						font-size: 1.4rem;
 						font-weight: 700;
 						margin-right: 2rem;
+						@include mobile {
+							-webkit-box-flex: 1;
+							-ms-flex: 1 30rem;
+							flex: 1 30rem;
+							margin: 0;
+							margin-left: 3rem;
+						}
 					}
 					> span {
 						@include i_flex(center);
 						color: #67676a;
 						font-size: 1.6rem;
 						font-weight: 500;
+						@include mobile {
+							-webkit-box-flex: 1;
+							-ms-flex: 1 1 30rem;
+							flex: 1 1 30rem;
+							margin: 0;
+							margin-left: 3rem;
+						}
 						> img {
 							width: 2rem;
 							min-width: 2rem;
@@ -2013,12 +2102,23 @@
 						padding: 0.4rem 0.7rem;
 						margin-left: auto;
 						border-radius: 0.4rem;
+						@include mobile {
+							margin: 0;
+							margin-left: 3rem;
+						}
 					}
 					> .input {
 						width: 26rem;
 						height: 3.6rem;
 						font-size: 1.4rem;
 						margin-left: 1rem;
+						@include mobile {
+							-webkit-box-flex: 1;
+							-ms-flex: 1 1 30rem;
+							flex: 1 1 30rem;
+							margin: 0;
+							margin-left: 3rem;
+						}
 					}
 				}
 			}
@@ -2171,6 +2271,10 @@
 			line-height: 7.8rem;
 			text-transform: uppercase;
 			margin: 0 0 4rem;
+			@include mobile {
+				font-size: 4.4rem;
+				line-height: 1.2;
+			}
 		}
 	}
 }
@@ -2185,10 +2289,17 @@
 			line-height: 7.8rem;
 			text-transform: uppercase;
 			margin: 0 0 4rem;
+			@include mobile {
+				font-size: 5.4rem;
+			}
 		}
 		.head {
 			@include flex(center, space-between);
 			margin-bottom: 4rem;
+			@include mobile {
+				@include flex($flow: wrap);
+				@include gap(2rem);
+			}
 			.input_blk {
 				color: var(--prime_color);
 				padding: 2rem 3rem;
@@ -2199,6 +2310,11 @@
 				font-size: 2rem;
 				font-weight: 600;
 				line-height: 1.4;
+				@include mobile {
+					-webkit-box-flex: 1;
+					-ms-flex: 1 1 30rem;
+					flex: 1 1 30rem;
+				}
 				&_item {
 					> span {
 						display: block;
@@ -2210,9 +2326,16 @@
 		}
 		.text_blk {
 			@include flex;
+			@include mobile {
+				@include flex($flow: wrap);
+				@include gap(2rem);
+			}
 			.input_blk {
 				color: #b0aff1;
 				margin-left: 4rem;
+				@include mobile {
+					margin-left: 0;
+				}
 			}
 		}
 		.input_blk {
@@ -2223,6 +2346,11 @@
 			padding: 1rem 3rem;
 			border: 0.1rem solid #d9e1e7;
 			border-radius: 0.6rem;
+			@include mobile {
+				-webkit-box-flex: 1;
+				-ms-flex: 1 1 30rem;
+				flex: 1 1 30rem;
+			}
 		}
 		.signature {
 			width: 23rem;
@@ -2257,10 +2385,20 @@
 			width: 54rem;
 			min-width: 54rem;
 			border-right: 0.1rem solid #d9e1e7;
+			@include mobile {
+				width: 100%;
+				min-width: 0;
+			}
 		}
 		.content_block {
 			@include flex($flow: column);
 			width: calc(100% - 54rem);
+			@include mobile {
+				display: none;
+				@include pos($z: 10);
+				width: 100%;
+				background: var(--light);
+			}
 		}
 		.head {
 			@include flex(center);
@@ -2290,6 +2428,9 @@
 			.x_btn {
 				position: static;
 				display: none;
+				@include mobile {
+					@include flex;
+				}
 			}
 		}
 	}
@@ -2845,6 +2986,10 @@
 			margin: 4rem 0 5rem;
 			padding-bottom: 5rem;
 			border-bottom: 0.1rem solid #d9e1e7;
+			@include mobile {
+				margin: 2rem 0 2rem;
+				padding-bottom: 2rem;
+			}
 			.score_logo {
 				max-width: 12rem;
 				height: 6rem;
@@ -2865,6 +3010,10 @@
 			@include flex($justify: space-between);
 			@include gap(3rem);
 			margin: 4rem 0 0;
+			@include mobile {
+				@include flex($flow: wrap);
+				margin: 2rem 0 0;
+			}
 			.num {
 				@include flex(center);
 				@include gap(1rem);
@@ -2881,6 +3030,9 @@
 	}
 	.user_profile_blk {
 		@include flex(center);
+		@include mobile {
+			@include flex($flow: column);
+		}
 		.ico {
 			width: 14rem;
 			min-width: 14rem;
@@ -2888,6 +3040,9 @@
 			&_blk {
 				position: relative;
 				margin-right: 2rem;
+				@include mobile {
+					margin: 0 auto 2rem;
+				}
 				> span {
 					position: absolute;
 					background: #6bc600;
@@ -2913,6 +3068,11 @@
 			.top {
 				@include flex(center, space-between);
 				margin-bottom: 3rem;
+				@include mobile {
+					@include flex($flow: column);
+					text-align: center;
+					margin-bottom: 1rem;
+				}
 				.name {
 					font-size: 1.6rem;
 					font-weight: 600;
@@ -2937,10 +3097,17 @@
 			}
 			.btm {
 				@include flex(center, space-between);
+				@include mobile {
+					@include flex($flow: column);
+					text-align: center;
+				}
 				ul {
 					@include list;
 					@include flex;
 					@include gap(2rem);
+					@include mobile {
+						margin-bottom: 1rem;
+					}
 					li {
 						font-size: 1.4rem;
 						font-weight: 600;
@@ -2976,6 +3143,9 @@
 
 .table_pagination {
 	@include flex(center);
+	@include mobile {
+		@include flex($flow: wrap);
+	}
 	margin-top: 3rem;
 	> * {
 		-webkit-box-flex: 1;
@@ -2990,6 +3160,16 @@
 		@include list;
 		@include flex(center, center);
 		@include gap(2rem);
+		@include mobile {
+			-webkit-box-flex: 0;
+			-ms-flex: none;
+			flex: none;
+			-webkit-box-ordinal-group: 2;
+			-ms-flex-order: 1;
+			order: 1;
+			width: 100%;
+			margin-top: 1rem;
+		}
 		> li {
 			> span {
 				width: 2.6rem;
@@ -3105,6 +3285,10 @@
 			&:nth-child(1) {
 				width: 37rem;
 				min-width: 37rem;
+				@include mobile {
+					width: 100%;
+					min-width: 100%;
+				}
 			}
 			&:nth-child(2) {
 				-webkit-box-flex: 1;
@@ -3251,6 +3435,9 @@
 				@include ipad_sm {
 					width: calc(50% - 1.2rem);
 				}
+				@include mobile_md {
+					width: calc(100% - 2.4rem);
+				}
 			}
 		}
 		.consult_card {
@@ -3365,6 +3552,12 @@
 	@include flex(center);
 	@include gap(0.5rem);
 	margin-bottom: 0;
+	@include mobile {
+		margin-bottom: -1.5rem;
+		& + p {
+			margin-top: 2rem;
+		}
+	}
 	> img {
 		width: 1.8rem;
 		min-width: 1.8rem;
@@ -3395,6 +3588,9 @@
 			font-weight: 600;
 		}
 		br {
+			@include mobile {
+				display: none;
+			}
 		}
 	}
 	&_wrapper {
@@ -3429,6 +3625,9 @@
 		border-left: inherit;
 		border-radius: 0;
 		@include mobile_md {
+			span {
+				display: none;
+			}
 		}
 		&:hover {
 			color: var(--prime_color) !important;
@@ -3517,6 +3716,10 @@
 }
 
 .affiliate_link_blk {
+	@include mobile {
+		padding: 0 $i;
+		border: 0 $i;
+	}
 	.flex_blk {
 		@include flex(center);
 		max-width: 60rem;
@@ -3535,6 +3738,9 @@
 			@include flex;
 			@include gap(3rem);
 			max-width: 100rem;
+			@include mobile {
+				@include flex($flow: wrap);
+			}
 		}
 		-webkit-box-flex: 1;
 		-ms-flex: 1;
@@ -3543,6 +3749,9 @@
 		color: var(--light);
 		padding: 4rem;
 		border-radius: 1rem;
+		@include mobile {
+			min-width: 100%;
+		}
 		.title {
 			font-size: 2.6rem;
 			line-height: 1;

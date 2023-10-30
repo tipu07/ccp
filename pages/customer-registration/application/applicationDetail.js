@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import style from "@/styles/scss/web.module.scss"
 import Image from "next/image"
-import { ProfessionalWoman, SaveIcon } from "@/components/images"
+import { SaveIcon } from "@/components/images"
 import FormBasicDetails from "./formBasicDetails"
 import FormUploadDocuments from "./formUploadDocuments"
 import FormAgreement from "./formAgreement"

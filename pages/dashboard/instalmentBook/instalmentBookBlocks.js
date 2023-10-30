@@ -6,8 +6,8 @@ import { DownwardIcon, UpwardIcon } from "@/components/images"
 export default function InstalmentBookBlocks() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-md-4">
+			<div className="row mb-0">
+				<div className="col-md-4 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={UpwardIcon} alt="" />
@@ -18,7 +18,7 @@ export default function InstalmentBookBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-4 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={UpwardIcon} alt="" />
@@ -29,7 +29,7 @@ export default function InstalmentBookBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-4 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={DownwardIcon} alt="" />
