@@ -6,8 +6,8 @@ import { BlockChartGreenIcon, BlockChartRedIcon, BlockUpwardGreenIcon, BlockUpwa
 export default function DashboardBlocks() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-md-3">
+			<div className="row mb-0">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockChartRedIcon} alt="" />
@@ -18,7 +18,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockUpwardRedIcon} alt="" />
@@ -29,7 +29,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockChartGreenIcon} alt="" />
@@ -40,7 +40,7 @@ export default function DashboardBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockUpwardGreenIcon} alt="" />

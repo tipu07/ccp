@@ -1,7 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import style from "@/styles/scss/web.module.scss"
-import Image from "next/image"
-import { IconArrowLeft, IconDownload2 } from "@/components/images"
 import SettingsForm from "./settingsForm"
 
 export default function SettingsDetail() {

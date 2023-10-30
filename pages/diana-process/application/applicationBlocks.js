@@ -6,8 +6,8 @@ import { BlockApplicationIcon, BlockDraftsIcon, BlockIssueIcon, BlockUserIcon } 
 export default function ApplicationBlocks() {
 	return (
 		<>
-			<div className="row">
-				<div className="col-md-3">
+			<div className="row mb-0">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockApplicationIcon} alt="" />
@@ -18,7 +18,7 @@ export default function ApplicationBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockUserIcon} alt="" />
@@ -29,7 +29,7 @@ export default function ApplicationBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockIssueIcon} alt="" />
@@ -40,7 +40,7 @@ export default function ApplicationBlocks() {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 pb-0">
 					<div className={style.instalment_blk}>
 						<div className={style.ico}>
 							<Image width={100} height={100} src={BlockDraftsIcon} alt="" />

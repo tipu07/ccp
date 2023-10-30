@@ -1,7 +1,7 @@
 import React from "react"
 import style from "@/styles/scss/web.module.scss"
 import Image from "next/image"
-import { IconCalendar, IconDownload2, IconFilter, IconPlus, IconSearch } from "@/components/images"
+import { IconDownload2, IconFilter, IconPlus, IconSearch } from "@/components/images"
 import ManageApplicationsTable from "./manageApplicationsTable"
 import TablePagination from "@/components/tablePagination"
 import Link from "next/link"
