@@ -33,6 +33,8 @@ $colors: (
 html {
 	min-height: 100%;
 	font-size: 7.11458px;
+	max-width: 1440px;
+	margin: 0 auto;
 	overflow: hidden;
 	overflow-y: initial;
 	&.flow {
