@@ -35,10 +35,16 @@ html {
 	font-size: 7.11458px;
 	overflow: hidden;
 	overflow-y: initial;
-	@media (min-width: 1441px) {
+	/* @media (min-width: 1441px) {
 		max-width: 1440px;
 		transform: translate(0);
 		margin: 0 auto;
+	} */
+	@media (min-width: 1441px) {
+		font-size: 10px;
+	}
+	@media (min-width: 1920px) {
+		font-size: 14px;
 	}
 	&.flow {
 		overflow: hidden !important;
